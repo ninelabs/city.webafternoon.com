@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////////////
 // WEB AFTERNOON -=- styles.scss
 
-
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600|Roboto+Slab);
 @import 'variables','../bower_components/bootstrap-sass/vendor/assets/stylesheets/bootstrap.scss','responsive','mixins';
 
 html,body {
@@ -62,7 +62,7 @@ header {
     @include make-row();
     h1 {
       color: #fff;
-      font-weight: bold;
+      font-size: 20px;
       text-shadow: 0 2px 0 #020202;
       @include breakpoint(md) { font-size:1.8em; }
       @include breakpoint(sm) { font-size: 1.5em; }
@@ -82,7 +82,6 @@ header {
 
   &.full {
     background: url(/img/bg-header.jpg) no-repeat center bottom;
-    margin-bottom:2em;
     margin-top:0;
     padding:3em 0 0;
     text-align: center;
@@ -91,6 +90,9 @@ header {
     }
     .brand, .message, .cta {
       @include make-sm-column(12)
+    }
+    .brand {
+      margin-bottom: 1em;
     }
     .cta {
       padding-top:20px;
@@ -112,7 +114,7 @@ header {
     }
     .message {
       @include make-sm-column(9);
-      h1 { font-size: 1.5em; margin: 10px 0 0; }
+      h1 { font-size: 20px; margin: .3em 0; }
       h2 { font-size: 1em; margin: 0; }
     }
     .cta {
@@ -123,7 +125,17 @@ header {
   }
 }
 
-
+#events {
+  .grid {
+    @include make-row();
+    figure.event {
+      @include make-sm-column(4);
+      img {
+        @extend .img-thumbnail;
+      }
+    }
+  }
+}
 
 //////////////////////////
 // Globals
@@ -165,7 +177,7 @@ header {
 //////////////////////////
 
 #event-overview {
-  padding: 2em 0 0;
+  padding:0;
   .highlight {
     @include make-sm-column(12);
   }
@@ -192,90 +204,13 @@ header {
   }
 }
 
-#event-details {
+#event-details, #sponsor-page, #host-page {
   @include make-row();
-}
-
-
-//////////////////////////
-// Speakers
-//////////////////////////
-
-.speaker-list {
-  .timeslot {
-    @include make-row();
-    padding:1em 0 0;
-    .start-time {
-      @include make-sm-column(12);
-      color:#888;
-      font-weight: bold;
-      text-transform: lowercase;
-    }
+  .main-content {
+    @include make-sm-column(8);
   }
-}
-
-.speaker {
-  @include make-row();
-  border-bottom: 1px solid rgb(221, 221, 221);
-  padding: 0 0 2.5em;
-  &:last-child {
-    border-bottom:0 ;
-  }
-  .speaker-photo {
-    @include make-sm-column(2);
-    img {
-      @extend .img-responsive;
-      @extend .img-rounded;
-      min-width:100%;
-    }
-  }
-  .speaker-meta {
-    @include make-sm-column(10);
-    .speaker-name {
-      font-size:2em;
-      font-weight: bold;
-      margin: 0;
-    }
-  }
-  .speaker-title {
-    color:#999;
-    font-size: 1.2em;
-    font-weight: normal;
-    margin:0;
-    padding: .25em 0;
-  }
-  .speaker-bio {
-  }
-}
-
-.speaker-contact {
-  margin:1em 0;
-  a {
-    @extend .btn;
-    @extend .btn-xs;
-    @extend .btn-default;
-  }
-}
-
-.talk-info {
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 2em;
-  padding: 2em 0 3em;
-}
-
-
-.break {
-  background-color: #eee;
-  color:#888;
-  font-family:"proxima_nova_light", helvetica, arial, sans-serif;
-  font-weight: normal;
-  font-size: 1.5em;
-  padding: .5em 0;
-  text-align: center;
-  text-transform: uppercase;
-  p {
-    margin:0;
-    padding:0;
+  .sidebar {
+    @include make-sm-column(4);
   }
 }
 

@@ -1,20 +1,5 @@
-<!doctype html>
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-  <title>{{ page.title }} | {{ site.name }} | Web Afternoon | The event for people who love the Web.</title>
-  <meta charset="UTF-8">
-  <meta name="description" content="Web Afternoon - The event for people who love the Web - October 4th - Atlanta, GA">
-  <meta name="keywords" content="web, conference, design, development, speakers, event">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-  <link href="/css/styles.css?v=2" rel="stylesheet">
-  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-  <script type="text/javascript" src="//use.typekit.net/inj1qkm.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-</head>
+{% include _head.html %}
+
 <body>
 
   <header id="home" class="thin">
@@ -24,10 +9,10 @@
       </div>
       <div class="message">
         <h1>The Event for People Who Love the Web</h1>
-        <h2>{{ site.data.event-info.date | date: "%b. %-d, %Y"  }} &#8226; {{site.data.event-info.venue-name }} &#8226; {{ site.data.event-info.city }}</h2>
+        <h2>A lean and fast-paced half-day event designed with value in mind.</h2>
       </div>
       <div class="cta">
-        <a href="/#tickets">Get Your Tickets Here</a>
+        <a href="/">Get Your Tickets Here</a>
       </div>
     </div>
   </header>
@@ -40,26 +25,4 @@
     </div>
   </section>
 
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="span12">
-          <nav>
-            <a href="/sponsor/">Become a Sponsor</a><span> | </span><a href="/host/">Host an Event</a><span> | </span><a href="/code-of-conduct/">Code of Conduct</a>
-          </nav>
-        </div>
-      </div>
-      <div class="row">
-        <div class="copyright">
-          <a href="/"><img src="/img/logo-small.png" title="Web Afternoon"></a>
-          <p>Web Afternoon is brought to you by <a href="http://ninelabs.com">Nine Labs</a> and the <a href="http://www.awdg.org">Atlanta Web Design Group</a>. &copy {{ site.time | date: "%Y" }} All Rights Reserved</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-
-</body>
-</html>
+{% include _foot.html %}
