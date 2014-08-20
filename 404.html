@@ -1,0 +1,29 @@
+---
+layout: default
+title: Whoops! - Web Afternoon
+permalink: /404.html
+---
+
+<section id="four-oh-four">
+  <div class="row">
+    <div class="content">
+      <h1>Whoops! You&rsquo;ve found a 404.</h1>
+      <p>That means &ldquo;Page not Found&rdquo; in nerd speak. It&rsquo;s not the end of the world, though.</p>
+      <a href="/" class="btn btn-primary">General Info</a>
+      <a href="/sponsor/" class="btn btn-primary">Become a Sponsor</a>
+      <a href="/host/" class="btn btn-primary">Host an Event</a>
+    </div>
+  </div>
+</section>
+
+<section id="events">
+    <h3>Upcoming Events</h3>
+    <div class="grid">
+      {% for event in site.data.events %}
+      <figure class="event {{ event.slug }}">
+        <img src="/img/cities/{{ event.slug }}-tile.jpg">
+        <figcaption>{{ event.city }} &mdash; {{ event.date }}</figcaption>
+      </figure>
+      {% endfor %}
+    </div>
+</section>
