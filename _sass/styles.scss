@@ -126,13 +126,28 @@ header {
 }
 
 #events {
+  h2 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: .5em;
+    margin-bottom: 1em;
+    text-align: center;
+  }
   .grid {
     @include make-row();
     figure.event {
+      text-align: center;
       @include make-sm-column(4);
+      figcaption {
+        .event-city {
+          display: block;
+          font-size: 1.3em;
+          font-weight: bold;
+        }
+      }
       img {
         @extend .img-thumbnail;
       }
+
     }
   }
 }

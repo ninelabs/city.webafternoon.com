@@ -1,6 +1,7 @@
 - city: Charleston, SC
   slug: charleston
   date: October 4th, 2014
+  live: true
 
 - city: Charlotte, NC
   slug: charlotte
