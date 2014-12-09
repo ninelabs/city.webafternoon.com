@@ -135,8 +135,9 @@ header {
   .grid {
     @include make-row();
     figure.event {
+      @include make-sm-column(3);
+      margin-bottom: 3em;
       text-align: center;
-      @include make-sm-column(4);
       figcaption {
         .event-city {
           display: block;

@@ -5,8 +5,16 @@
 
 - city: Atlanta, GA
   slug: atlanta
-  date: March, 2015
+  date: March 27, 2015
 
 - city: Boston, MA
   slug: boston
   date: June, 2015
+
+- city: Atlanta, GA
+  slug: atlanta
+  date: June, 2015
+
+- city: Charlotte, NC
+  slug: charlotte
+  date: December 4th, 2015
