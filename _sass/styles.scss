@@ -245,10 +245,25 @@ header {
 // PARTNERS
 //////////////////////////
 
-.secondary-content {
-  margin-top: 70px;
+.main-content {
+  @include make-md-column(12);
+  margin-bottom: 30px;
 }
 
+.secondary-content {
+  @include make-md-column(8);
+}
+
+.graphic1 img {
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.sidebar {
+    @include make-md-column(4);
+    background-color: #bbdefb;
+    height: 400px;
+  }
 
 
 
