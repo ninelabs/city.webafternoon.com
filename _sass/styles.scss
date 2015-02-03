@@ -154,6 +154,26 @@ header {
 }
 
 //////////////////////////
+// ATL EVENT PAGE -- Default.html 
+//////////////////////////
+
+.keynotes {
+  @include make-md-column(12);
+  margin-top: 50px;
+}
+
+.keynotes img {
+  @include make-md-column(6);
+  margin: 0 auto;
+  padding: 0px;
+}
+
+.keynotes img:hover {
+  background-color: #000;
+  opacity: .8;
+}
+
+//////////////////////////
 // Globals
 //////////////////////////
 
