@@ -34,7 +34,8 @@ h4 {
 //////////////////////////
 
 body {
-  background: url(/img/bg-wrap.jpg) center top;
+  background: url(/img/bg-wrap.jpg) no-repeat center top;
+  bacground-size: cover;
   color: $gray-darker;
   padding:0;
   margin:0;
@@ -51,6 +52,7 @@ body {
 //////////////////////////
 
 header {
+  // @include make-row();
   @extend .container;
   color: #fff;
 
@@ -60,11 +62,11 @@ header {
   }
 
   .hero {
-    @include make-row();
     h1 {
       color: #fff;
-      font-size: 20px;
+      font-size: 28px;
       text-shadow: 0 2px 0 #020202;
+      padding-bottom: 15px;
       @include breakpoint(md) { font-size:1.8em; }
       @include breakpoint(sm) { font-size: 1.5em; }
     }
@@ -83,8 +85,7 @@ header {
 
   &.full {
     background: url(/img/hero.jpg) no-repeat center bottom;
-    background-size: cover;
-    margin-top:0;
+    margin: 0 auto;
     padding:3em 0 0;
     text-align: center;
     .hero {
@@ -94,7 +95,7 @@ header {
       @include make-sm-column(12)
     }
     .brand {
-      margin-bottom: 1em;
+      margin-bottom: 3em;
     }
     .cta {
       padding-top:20px;
@@ -161,23 +162,27 @@ header {
 
 body.atlanta {
 
-  background: none!important;
-    .row {
-      margin-left: 0px;
-      margin-right: 0px;
-    .col-sm-6 {
-      padding-left: 0px;
-      padding-right: 0px;
-    }
-    .col-sm-3 {
-      padding-left: 0px;
-      padding-right: 0px;
-    }
+  background: url(/img/bg-wrap.jpg) no-repeat center top;
+  background-size:cover;
+  .row {
+    margin-left: 0px;
+    margin-right: 0px;
+  .col-sm-6 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .col-sm-3 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
   }
 
-h1 {
+h1, {
   font-family: 'futura' sans-serif;
 }  
+h2 {
+  font-family: 'open-sans' sans-serif;
+}
 
 #content {
   padding-top: 0px;
@@ -189,6 +194,7 @@ section {
   padding: 0px;
   margin: 0 auto;
 }
+
 
 
 // ----- block 1 -------
@@ -248,11 +254,18 @@ section {
         padding: 0px 0px 30px 30px;
         h1 {
           color: #fff;
-          font-size: 24px;
+          font-size: 35px;
+        }
+        h2 {
+          color: #fff;
+          font-size: 18px;
+          padding: 0px;
+          margin: 0 auto; 
         }
         p {
           color: #fff;
-          line-height: 14px !important;
+          padding: 0px;
+          margin: 0 auto; 
         }
       }
     } // end revealed
@@ -326,6 +339,7 @@ section {
       &:hover {
         background-color: #0c1e4e;
         opacity: .8;
+        // background-color: rgba(26, 35, 126, 0.7);
       }
       .name {
         position: absolute;
@@ -335,9 +349,18 @@ section {
           color: #fff;
           font-size: 24px;
         }
+         h2 {
+          color: #fff;
+          font-size: 16px;
+          font-weight: 500;
+          padding: 0px;
+          margin: 0 auto; 
+        }
         p {
           color: #fff;
-          line-height: 20px;
+          padding: 0px;
+          margin: 0 auto; 
+          font-size: 16px;
         }
       }
     } // end revealed
