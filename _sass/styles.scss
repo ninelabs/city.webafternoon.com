@@ -8,6 +8,7 @@ html,body {
   height: 100%;
 }
 
+
 //////////////////////////
 // Typography
 //////////////////////////
@@ -81,7 +82,8 @@ header {
   }
 
   &.full {
-    background: url(/img/bg-header.jpg) no-repeat center bottom;
+    background: url(/img/hero.jpg) no-repeat center bottom;
+    background-size: cover;
     margin-top:0;
     padding:3em 0 0;
     text-align: center;
@@ -153,25 +155,320 @@ header {
   }
 }
 
-//////////////////////////
-// ATL EVENT PAGE -- Default.html 
-//////////////////////////
+//////////////////////////////////////////////////////////
+////  ATL EVENT PAGE -- Default.html  
+//////////////////////////////////////////////////////////
 
-.keynotes {
-  @include make-md-column(12);
-  margin-top: 50px;
+body.atlanta {
+
+  background: none!important;
+    .row {
+      margin-left: 0px;
+      margin-right: 0px;
+    .col-sm-6 {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .col-sm-3 {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+
+h1 {
+  font-family: 'futura' sans-serif;
+}  
+
+#content {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
-.keynotes img {
-  @include make-md-column(6);
-  margin: 0 auto;
+section {
+  @include make-row ();
   padding: 0px;
+  margin: 0 auto;
 }
 
-.keynotes img:hover {
-  background-color: #000;
-  opacity: .8;
+
+// ----- block 1 -------
+.block1 {
+  @include make-md-column(12);
+  padding: 50px 0px;
+  h1 {
+    @include make-md-column(12);
+    color: #2d2d2d;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+  p {
+    @include make-md-column(12);
+    color: #2d2d2d;
+    line-height: 26px;
+  }
+} // end block 1
+
+
+
+
+// ----- keynotes -------
+.keynotes {
+  .test {
+    position: relative;
+    width: 100%;
+    float: left;
+    @include breakpoint(md) {
+        width: 50%;
+        float: left;
+    }
+    @include breakpoint(lg) {
+        width: 50%;
+        float: left;
+    }
+    img {
+      margin: 0 auto;
+      padding: 0px;
+      width: 100%;
+    }
+    .revealed {
+      position: absolute;
+      opacity: 0;
+      z-index: 2323;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      &:hover {
+        background-color: #0c1e4e;
+        opacity: .8;
+      }
+      .name {
+        position: absolute;
+        bottom: 0;
+        padding: 0px 0px 30px 30px;
+        h1 {
+          color: #fff;
+          font-size: 24px;
+        }
+        p {
+          color: #fff;
+          line-height: 14px !important;
+        }
+      }
+    } // end revealed
+  } // end test
+} // end keynotes
+
+
+
+// ----- gold sponsors -------
+.gold-sponsors {
+   @include breakpoint(nano) {
+        width: 100%;
+      }
+    @include breakpoint(xs) {
+        width: 100%;
+      }
+  @include make-md-column(12);
+  padding: 50px 0px;
+    h1 {
+      padding-bottom: 20px;
+      text-align: center;
+      margin-bottom: 25px;
+      color: #2d2d2d;
+    }
+    img {
+      @include make-md-column(4);
+      padding: 10px 85px;
+      position: center;
+      @include breakpoint(nano) {
+        width: 50%;
+        float: left;
+        padding: 10px;
+      }
+      @include breakpoint(xs) {
+        width: 50%;
+        float: left;
+        padding: 10px;
+      }
+    }
+} // end gold sponsors
+
+.speakers {
+  .test {
+    position: relative;
+    width: 50%;
+    float: left;
+    padding-left: 0px;
+    padding-right: 0px;
+    @include breakpoint(md) {  
+      @include make-md-column(3);
+      margin: 0 auto;
+      padding: 0px;
+    }
+    @include breakpoint(lg) {  
+      @include make-md-column(3);
+      margin: 0 auto;
+      padding: 0px;
+    }
+    img {
+      width: 100%;
+      float: left;
+    }
+    .revealed {
+      position: absolute;
+      opacity: 0;
+      z-index: 2323;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      &:hover {
+        background-color: #0c1e4e;
+        opacity: .8;
+      }
+      .name {
+        position: absolute;
+        bottom: 0;
+        padding: 0px 0px 30px 30px;
+        h1 {
+          color: #fff;
+          font-size: 24px;
+        }
+        p {
+          color: #fff;
+          line-height: 20px;
+        }
+      }
+    } // end revealed
+  } // end test
+} // end speakers
+
+
+
+// ----- info -------
+
+section #info {
+  background: url(/img/info-bkgd.jpg) no-repeat center bottom;
+  background-size: cover;
 }
+
+.info {
+  @include make-md-column(12);
+  padding: 50px 0px;
+  h1 {
+    padding-bottom: 15px;
+    color: #fff;
+    text-align: center;
+  }
+  p .left { 
+    @include make-md-column(6);
+    color: #fff;
+    line-height: 28px;
+    padding: 10px 20px 30px 10px;
+  }
+  p {
+    @include make-md-column(6);
+    color: #fff;
+    line-height: 28px;
+    padding: 10px 20px 30px 10px;
+  }
+} // end info 
+
+// ----- silver sponsors -------
+.silver-sponsors {
+  @include breakpoint(nano) {
+    width: 100%;
+    padding: 10px 0px;
+  }
+  @include breakpoint(xs) {
+    width: 100%;
+    padding: 10px 0px;
+  }
+  @include make-md-column(12);
+  padding: 50px 0px;
+  h1 {
+    padding-bottom: 20px;
+    text-align: center;
+    color: #2d2d2d;
+  }
+  img {
+    @include make-md-column(2);
+    padding: 15px 20px;
+    position: center;
+    @include breakpoint(nano) {
+      width: 50%;
+      float: left;
+      padding: 10px;
+    }
+    @include breakpoint(xs) {
+      width: 50%;
+      float: left;
+      padding: 10px;
+    }
+  }
+} // end silver sponsors
+
+// ----- subscribe -------
+section #subscribe {
+  background: url(/img/subscribe-bkgd.jpg) no-repeat center bottom;
+  background-size: cover;
+}
+.subscribe {
+  @include make-md-column(12);
+  padding: 50px 0px;
+  text-align: center;
+  h1 {
+    color: #fff;
+    padding-bottom: 20px;
+    @include breakpoint(nano) {
+      font-size: 28px;
+      line-height: 32px;
+    }
+    @include breakpoint(xs) {
+      font-size: 28px;
+      line-height: 32px;
+    }
+  }
+  input {
+    @include make-md-column(4);
+    float: none!important;
+    display: inline;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #fff;
+    opacity: .2;
+    border: 1px solid #fff;
+    margin-right: 10px;
+  }
+  button {
+    float: none!important;
+    display: inline;
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: none;
+  }
+  button:hover {
+    opacity: .8;
+  }
+} // end subscribe 
+
+// ----- footer -------
+.footer {
+  @include make-md-column(12);
+  background-color: #fff;
+  padding: 60px 0px 20px 0px;
+  text-align: center;
+  p {
+    color: #2d2d2d;
+    text-align: center;
+    padding-top: 20px;
+  }
+} // end footer
+
+} // END BODY ATLANTA 
+
 
 //////////////////////////
 // Globals
