@@ -29,7 +29,7 @@ h4 {
   font-weight: bolder;
 }
  p {
-  font-family: "ff-tisa-web-pro"; 
+  font-family: $font-family-serif; 
  }
 
 //////////////////////////
@@ -223,7 +223,7 @@ section {
     }
     .name {
       position: absolute;
-      background-color: rgba(250, 250, 250, .8);
+      background-color: rgba(250, 250, 250, 1);
       bottom: 0;
       padding: 0px 10px 10px 10px;
       @include breakpoint(md) {
@@ -301,16 +301,15 @@ section {
     position: relative;
     width: 100%;
     float: left;
-    padding: 0px;
     @include breakpoint(md) {  
       @include make-md-column(3);
       margin: 0 auto;
-      padding: 0px;
+      padding: 0px 0px 60px 0px;
     }
     @include breakpoint(lg) {  
       @include make-md-column(3);
       margin: 0 auto;
-      padding: 0px;
+      padding: 0px 0px 60px 0px;
     }
     img {
       width: 100%;
@@ -318,13 +317,14 @@ section {
     }
     .name {
       position: absolute;
-      background-color: rgba(250, 250, 250, .8);
+      background-color: rgba(250, 250, 250, 1);
       bottom: 0;
-      padding: 5px 10px;
+      padding: 20px 10px;
+      border-bottom: 10px solid #d84315;
       h1 {
         color: #d84315;
         font-size: 22px;
-        padding: 5px 0px;;
+        padding: 5px 0px;
         margin: 0 auto;
       }
       h2 {
