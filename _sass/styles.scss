@@ -1,7 +1,6 @@
 ////////////////////////////////////////////////////////////////////
 // WEB AFTERNOON -=- styles.scss
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600|Roboto+Slab);
 @import 'variables','../bower_components/bootstrap-sass/vendor/assets/stylesheets/bootstrap.scss','responsive','mixins';
 
 html,body {
@@ -24,12 +23,13 @@ h1, h2, h3 {
   color: #2d2d2d;
   font-family: $font-family-sans-serif;
 }
+
 h4 {
   color: $gray;
   font-weight: bolder;
 }
  p {
-  font-family: "ff-tisa-web-pro"; 
+  font-family: $font-family-serif;
  }
 
 //////////////////////////
@@ -159,15 +159,8 @@ header {
 }
 
 //////////////////////////////////////////////////////////
-////  ATL EVENT PAGE -- Default.html  
+////  ATL EVENT PAGE -- Default.html
 //////////////////////////////////////////////////////////
-
-h1, h2, h3 {
-  font-family: "freight-sans" sans-serif;
-}  
-p {
-  font-family: "ff-tisa-web-pro"; 
-}  
 
 #content {
   padding-top: 0px;
@@ -203,7 +196,7 @@ section {
     color: #d84315;
     font-size: 75px;
     text-align: center;
-  }  
+  }
   .test {
     position: relative;
     width: 100%;
@@ -251,10 +244,10 @@ section {
         color: #2d2d2d;
         font-size: 18px;
         padding: 0px;
-        margin: 0 auto; 
+        margin: 0 auto;
       }
     } // end name
-  } // end test 
+  } // end test
 } // end keynotes
 
 // ----- gold sponsors -------
@@ -304,12 +297,12 @@ section {
     padding-left: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
-    @include breakpoint(md) {  
+    @include breakpoint(md) {
       @include make-md-column(3);
       margin: 0 auto;
       padding: 0px 0px 40px 0px;
     }
-    @include breakpoint(lg) {  
+    @include breakpoint(lg) {
       @include make-md-column(3);
       margin: 0 auto;
       padding: 0px 0px 40px 0px;
@@ -334,9 +327,9 @@ section {
         font-size: 16px;
         padding: 0px;
         line-height: 22px;
-        margin: 0 auto; 
+        margin: 0 auto;
       }
-    }  
+    }
   }
 } // end speakers
 
@@ -354,7 +347,7 @@ section #info {
     color: #fff;
     text-align: center;
   }
-  p .left { 
+  p .left {
     @include make-md-column(6);
     color: #fff;
     line-height: 28px;
@@ -366,7 +359,7 @@ section #info {
     line-height: 28px;
     padding: 10px 20px 30px 10px;
   }
-} // end info 
+} // end info
 
 // ----- silver sponsors -------
 .silver-sponsors {
@@ -445,7 +438,7 @@ section #subscribe {
   button:hover {
     opacity: .8;
   }
-} // end subscribe 
+} // end subscribe
 
 
 //////////////////////////
