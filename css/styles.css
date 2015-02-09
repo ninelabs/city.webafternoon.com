@@ -7968,14 +7968,14 @@ section:after {
 @media (min-width: 992px) and (max-width: 1199px) {
   /* line 209, ../_sass/styles.scss */
   .keynotes .test {
-    width: 50%;
+    width: 33.3%;
     float: left;
   }
 }
 @media (min-width: 1200px) {
   /* line 209, ../_sass/styles.scss */
   .keynotes .test {
-    width: 50%;
+    width: 33.3%;
     float: left;
   }
 }

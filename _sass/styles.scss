@@ -211,11 +211,11 @@ section {
     width: 100%;
     float: left;
     @include breakpoint(md) {
-      width: 50%;
+      width: 33.3%;
       float: left;
     }
     @include breakpoint(lg) {
-      width: 50%;
+      width: 33.3%;
       float: left;
     }
     img {
