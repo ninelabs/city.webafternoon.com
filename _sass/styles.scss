@@ -21,13 +21,16 @@ a {
 }
 
 h1, h2, h3 {
-  color: $brand-primary;
-  font-family: $font-family-serif;
+  color: #2d2d2d;
+  font-family: $font-family-sans-serif;
 }
 h4 {
   color: $gray;
   font-weight: bolder;
 }
+ p {
+  font-family: "ff-tisa-web-pro"; 
+ }
 
 //////////////////////////
 // Structure
@@ -36,7 +39,7 @@ h4 {
 body {
   background: url(/img/bg-wrap.jpg) no-repeat center top;
   bacground-size: cover;
-  color: $gray-darker;
+  // color: $gray-darker;
   padding:0;
   margin:0;
 }
@@ -52,7 +55,6 @@ body {
 //////////////////////////
 
 header {
-  // @include make-row();
   @extend .container;
   color: #fff;
 
@@ -160,29 +162,12 @@ header {
 ////  ATL EVENT PAGE -- Default.html  
 //////////////////////////////////////////////////////////
 
-body.atlanta {
-
-  background: url(/img/bg-wrap.jpg) no-repeat center top;
-  background-size:cover;
-  .row {
-    margin-left: 0px;
-    margin-right: 0px;
-  .col-sm-6 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  .col-sm-3 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  }
-
-h1, {
-  font-family: 'futura' sans-serif;
+h1, h2, h3 {
+  font-family: "freight-sans" sans-serif;
 }  
-h2 {
-  font-family: 'open-sans' sans-serif;
-}
+p {
+  font-family: "ff-tisa-web-pro"; 
+}  
 
 #content {
   padding-top: 0px;
@@ -195,12 +180,10 @@ section {
   margin: 0 auto;
 }
 
-
-
 // ----- block 1 -------
 .block1 {
   @include make-md-column(12);
-  padding: 50px 0px;
+  padding: 50px 0px 50px 0px;
   h1 {
     @include make-md-column(12);
     color: #2d2d2d;
@@ -214,65 +197,65 @@ section {
   }
 } // end block 1
 
-
-
-
 // ----- keynotes -------
 .keynotes {
+  h3 {
+    color: #d84315;
+    font-size: 75px;
+    text-align: center;
+  }  
   .test {
     position: relative;
     width: 100%;
     float: left;
     @include breakpoint(md) {
-        width: 50%;
-        float: left;
+      width: 50%;
+      float: left;
     }
     @include breakpoint(lg) {
-        width: 50%;
-        float: left;
+      width: 50%;
+      float: left;
     }
     img {
       margin: 0 auto;
       padding: 0px;
       width: 100%;
     }
-    .revealed {
+    .name {
       position: absolute;
-      opacity: 0;
-      z-index: 2323;
-      width: 100%;
-      top: 0;
+      background-color: #fff;
       bottom: 0;
-      margin: auto;
-      &:hover {
-        background-color: #0c1e4e;
-        opacity: .8;
-      }
-      .name {
-        position: absolute;
-        bottom: 0;
-        padding: 0px 0px 30px 30px;
+      padding: 0px 10px 10px 10px;
+      @include breakpoint(md) {
+        .name {
+          padding: 10px 20px 10px 20px;
+        }
         h1 {
-          color: #fff;
           font-size: 35px;
         }
-        h2 {
-          color: #fff;
-          font-size: 18px;
-          padding: 0px;
-          margin: 0 auto; 
+      }
+      @include breakpoint(lg) {
+        .name {
+          padding: 10px 20px 10px 20px;
         }
-        p {
-          color: #fff;
-          padding: 0px;
-          margin: 0 auto; 
+        h1 {
+          font-size: 35px;
         }
       }
-    } // end revealed
-  } // end test
+      h1 {
+        color: #d84315;
+        font-size: 22px;
+        padding: 0px;
+      }
+      h2 {
+        color: #2d2d2d;
+        font-size: 18px;
+        padding: 0px;
+        margin: 0 auto; 
+      }
+    } // end name
+  } // end test 
 } // end keynotes
-
-
 
 // ----- gold sponsors -------
 .gold-sponsors {
@@ -285,7 +268,7 @@ section {
   @include make-md-column(12);
   padding: 50px 0px;
     h1 {
-      padding-bottom: 20px;
+      padding-bottom: 5px;
       text-align: center;
       margin-bottom: 25px;
       color: #2d2d2d;
@@ -308,69 +291,56 @@ section {
 } // end gold sponsors
 
 .speakers {
+  h3 {
+      color: #d84315;
+      font-size: 75px;
+      text-align: center;
+    }
   .test {
+    background-color: #fff;
     position: relative;
-    width: 50%;
+    width: 100%;
     float: left;
     padding-left: 0px;
     padding-right: 0px;
+    padding-bottom: 0px;
     @include breakpoint(md) {  
       @include make-md-column(3);
       margin: 0 auto;
-      padding: 0px;
+      padding: 0px 0px 40px 0px;
     }
     @include breakpoint(lg) {  
       @include make-md-column(3);
       margin: 0 auto;
-      padding: 0px;
+      padding: 0px 0px 40px 0px;
     }
     img {
       width: 100%;
       float: left;
     }
-    .revealed {
+    .name {
       position: absolute;
-      opacity: 0;
-      z-index: 2323;
-      width: 100%;
-      top: 0;
+      background-color: #fff;
       bottom: 0;
-      margin: auto;
-      &:hover {
-        background-color: #0c1e4e;
-        opacity: .8;
-        // background-color: rgba(26, 35, 126, 0.7);
+      padding: 0px 5px 5px 5px;
+      h1 {
+        color: #d84315;
+        font-size: 22px;
+        padding: 10px 0px;;
+        margin: 0 auto;
       }
-      .name {
-        position: absolute;
-        bottom: 0;
-        padding: 0px 0px 30px 30px;
-        h1 {
-          color: #fff;
-          font-size: 24px;
-        }
-         h2 {
-          color: #fff;
-          font-size: 16px;
-          font-weight: 500;
-          padding: 0px;
-          margin: 0 auto; 
-        }
-        p {
-          color: #fff;
-          padding: 0px;
-          margin: 0 auto; 
-          font-size: 16px;
-        }
+      h2 {
+        color: #2d2d2d;
+        font-size: 16px;
+        padding: 0px;
+        line-height: 22px;
+        margin: 0 auto; 
       }
-    } // end revealed
-  } // end test
+    }  
+  }
 } // end speakers
 
-
-
 // ----- info -------
-
 section #info {
   background: url(/img/info-bkgd.jpg) no-repeat center bottom;
   background-size: cover;
@@ -476,21 +446,6 @@ section #subscribe {
     opacity: .8;
   }
 } // end subscribe 
-
-// ----- footer -------
-.footer {
-  @include make-md-column(12);
-  background-color: #fff;
-  padding: 60px 0px 20px 0px;
-  text-align: center;
-  p {
-    color: #2d2d2d;
-    text-align: center;
-    padding-top: 20px;
-  }
-} // end footer
-
-} // END BODY ATLANTA 
 
 
 //////////////////////////
@@ -638,14 +593,13 @@ section #subscribe {
 ////////////////////////////////////////////////////////////////////
 
 footer {
-  background: url(/img/bg-wrap.jpg) center top;
-  color:#ddd;
-  padding:2em 0;
+  background-color: #fff;
+  padding:2em;
   text-align: center;
   a {
-    color:#eee;
+    color:#2d2d2d;
     &:hover{
-      color:#fff;
+      color:#ccc;
     }
   }
   nav {
