@@ -1,9 +1,48 @@
-- name: Martin Ringlein
-  title: Presidential Innovation Fellow
-  photo: http://awdg.s3.amazonaws.com/event-assets/martin_ringlein-1.jpg
-  twitter: http://twitter.com/smarty
-
+- name: Anna
+  title: Owner
+  company: Laboratory Marketing
+  photo: /img/atlanta/anna.jpg
+- name: Chidi Afulezi
+  title: Co-Founder, Head Product Guy
+  company: The Core
+  photo: /img/atlanta/chidi.jpg
 - name: Fabio Carneiro
   title: Lead Email Developer and UX Designer at MailChimp
   photo: http://awdg.s3.amazonaws.com/event-assets/fabio.png
   twitter: https://twitter.com/flcarneiro
+- name: Vicky Jones
+  title: President
+  company: Brand Fever
+  photo: /img/atlanta/vicky.jpg
+- name: Sophia Voychehovski
+  title: Founder
+  company: ReWired UX Studio
+  photo: /img/atlanta/sophia.jpg
+- name: Rosario Robinson
+  title: Program Manager
+  company: Anita Borg Institute for Women and Technology
+  photo: /img/atlanta/rose.jpg
+- name: Alankar Tayal
+  title: Usability Strategist
+  company: Sage Software
+  photo: /img/atlanta/alankar.jpg
+- name: Melanie Crissey
+  title: Client Success Manager
+  company: Rigor
+  photo: /img/atlanta/melanie.jpg
+- name: John Saddington
+  title: Partner, Hacker
+  company: The Iron Yard, Desk App
+  photo: /img/atlanta/john.jpg
+- name: Jennifer Fix
+  title: VP of Marketing &amp; Client Services
+  company: 352 Inc.
+  photo: /img/atlanta/jen.jpg
+- name: Erica Stanley
+  title: Founder
+  company: Acire Studios
+  photo: /img/atlanta/erica.jpg
+- name: Doc Waller
+  title: Inspiration Architect
+  company: Becoming Possible
+  photo: /img/atlanta/doc.jpg

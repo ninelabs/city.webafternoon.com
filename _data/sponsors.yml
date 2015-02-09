@@ -1,7 +1,8 @@
-- name: MailChimp
-  url: www.mailchimp.com
-  image: mailchimp.png
+- silver:
+  - name: MailChimp
+    url: www.mailchimp.com
+    image: mailchimp.png
 
-- name: Adobe
-  url: www.adobe.com
-  image: adobe.png
+  - name: Adobe
+    url: www.adobe.com
+    image: adobe.png
