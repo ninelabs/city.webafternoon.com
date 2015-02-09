@@ -223,7 +223,7 @@ section {
     }
     .name {
       position: absolute;
-      background-color: #fff;
+      background-color: rgba(250, 250, 250, .8);
       bottom: 0;
       padding: 0px 10px 10px 10px;
       @include breakpoint(md) {
@@ -231,7 +231,7 @@ section {
           padding: 10px 20px 10px 20px;
         }
         h1 {
-          font-size: 35px;
+          font-size: 22px;
         }
       }
       @include breakpoint(lg) {
@@ -239,7 +239,7 @@ section {
           padding: 10px 20px 10px 20px;
         }
         h1 {
-          font-size: 35px;
+          font-size: 22px;
         }
       }
       h1 {
@@ -301,18 +301,16 @@ section {
     position: relative;
     width: 100%;
     float: left;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
+    padding: 0px;
     @include breakpoint(md) {  
       @include make-md-column(3);
       margin: 0 auto;
-      padding: 0px 0px 40px 0px;
+      padding: 0px;
     }
     @include breakpoint(lg) {  
       @include make-md-column(3);
       margin: 0 auto;
-      padding: 0px 0px 40px 0px;
+      padding: 0px;
     }
     img {
       width: 100%;
@@ -320,13 +318,13 @@ section {
     }
     .name {
       position: absolute;
-      background-color: #fff;
+      background-color: rgba(250, 250, 250, .8);
       bottom: 0;
-      padding: 0px 5px 5px 5px;
+      padding: 5px 10px;
       h1 {
         color: #d84315;
         font-size: 22px;
-        padding: 10px 0px;;
+        padding: 5px 0px;;
         margin: 0 auto;
       }
       h2 {
