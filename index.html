@@ -3,61 +3,69 @@ layout: default
 title: Web Afternoon
 ---
 
-<section id="event-overview">
-  <div class="section-heading highlight">
-    <div class="section-heading-content">
-      <h1>Not Your Ordinary Web Conference.</h1>
-      <h4>It&rsquo;s a lean and fast-paced half-day event designed with value in mind.</h4>
+
+<div class="container">
+  <div class="block1">
+    <h1>March 76, 2015 | Atlanta, GA</h1>
+    <p>This is not your ordinary web conference. It's designed with value in mind, from the setup to the delivery of content. Local thought leaders talk with you, not at you. Pick their brains as they share short talks full of high-quality, meaningful information. Interact with fellow attendees and make a new friend you're excited to meet again and again. No fluff, no ego--just great Q&amp;A and the chance to network with people like you who get it.</p>
+  </div> <!-- END BLOCK 1 -->
+</div> <!-- END CONTAINER -->
+
+
+<section>
+  <div class="keynotes">
+    {% for speaker in site.data.keynotes %}
+    {% include speaker-module.html %}
+    {% endfor %}
+  </div>
+</section>
+
+
+<div class="container">
+  <div class="mobile-gold">
+    <div class="gold-sponsors">
+      <h1>Gold Sponsors</h1>
+      {% for silver in site.data.sponsors %}
+      <li>{{ sponsor.name }}</li>
+      {% endfor %}
     </div>
   </div>
-  <div class="row">
-    <div class="info-block">
-      <h3><i class="fa fa-bolt"></i> No Frills.</h3>
-      <p>Other events spend lots of money on stuff you don&rsquo;t care about: fancy flowers, dramatic lighting, and finger sandwiches &mdash; and they pass the cost on to you.</p>
-      <p>Not at Web Afternoon. We minimize the fluff and focus on high-quality content from people in the know &mdash; at a price you can afford.</p>
-    </div>
-    <div class="info-block">
-      <h3><i class="fa fa-comments"></i> Thought Leaders</h3>
-      <p>Short talks without the ego. Great Q&A. Networking with people you really want to meet. Your tribe: people like you; people who get it.</p>
-      <p>It&rsquo;s rare for so many great people to be in one spot at the same time. New friendships form. Conversations happen. Ideas are born.</p>
-    </div>
-    <div class="info-block">
-      <h3><i class="fa fa-heart"></i> Love. Not Profit.</h3>
-      <p>We believe in giving back to the community. That&rsquo;s why <em>every penny</em> from our events goes straight back to help local groups and meet-ups.</p>
-      <p>Our previous events have generated thousands of dollars for Web and technology focused groups. And we&rsquo;re just getting started.</p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="highlight">
-      <h4>You&rsquo;re not buying a ticket to pad someone&rsquo;s wallet. You&rsquo;re supporting the community you love.</h4>
-    </div>
-  </div>
-  <div class="row">
-    <p>We've invited a dozen thought leaders to come speak, lead group discussions, and mingle with you. We'll post information about who is coming soon.</p>
-    <!-- Begin MailChimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-  #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-  /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
-<div id="mc_embed_signup">
-<form action="//awdg.us4.list-manage.com/subscribe/post?u=dd83e9925d042bbeb961edab2&amp;id=12dcfd1825" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-  <h2>Get Notified When We Have Updates</h2>
-<div class="mc-field-group">
-  <label for="mce-EMAIL">Email Address </label>
-  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
 </div>
-  <div id="mce-responses" class="clear">
-    <div class="response" id="mce-error-response" style="display:none"></div>
-    <div class="response" id="mce-success-response" style="display:none"></div>
-  </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;"><input type="text" name="b_dd83e9925d042bbeb961edab2_12dcfd1825" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-    </div>
-</form>
+
+
+<section>
+  <div class="speakers">
+
+    {% for speaker in site.data.speakers %}
+    {% include speaker-module.html %}
+    {% endfor %}
+
+  </div> <!-- END SPEAKERS -->
+</section>
+
+
+<section id="info">
+  <div class="container">
+    what to expect
+  </div>
+</section>
+
+<div class="container">
+  <div class="silver-sponsors">
+    <h1>Silver Sponsors</h1>
+    {% for silver in site.data.sponsors %}
+    <li>{{ sponsor.name }}</li>
+    {% endfor %}
+  </div> <!-- END SILVER SPONSORS -->
 </div>
-<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='MMERGE3';ftypes[3]='text';fnames[4]='MMERGE4';ftypes[4]='number';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-<!--End mc_embed_signup-->
+
+
+<section id="subscribe">
+  <div class="container">
+    <div class="subscribe">
+      <h1>Get Notified When We Have Updates</h1>
+      <input type="text">
+      <button>Subscribe</button>
+    </div> <!-- END SUBSCRIBE -->
+  </div>
 </section>
