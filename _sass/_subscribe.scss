@@ -21,13 +21,13 @@ section #subscribe {
   }
   input {
     @include make-md-column(4);
-    float: none!important;
+    float: none !important;
+    color: #fff;
     display: inline;
     padding: 15px;
     border-radius: 5px;
-    background-color: #fff;
-    opacity: .2;
-    border: 1px solid #fff;
+    background-color: rgba(255,255,255,.2);
+    border: 1px solid rgba(0,0,0,.2);
     margin-right: 10px;
   }
   button {
