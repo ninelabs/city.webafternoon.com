@@ -1,0 +1,44 @@
+// ----- subscribe -------
+section #subscribe {
+  background: url(/img/subscribe-bkgd.jpg) no-repeat center bottom;
+  background-size: cover;
+}
+.subscribe {
+  @include make-md-column(12);
+  padding: 50px 0px;
+  text-align: center;
+  h1 {
+    color: #fff;
+    padding-bottom: 20px;
+    @include breakpoint(nano) {
+      font-size: 28px;
+      line-height: 32px;
+    }
+    @include breakpoint(xs) {
+      font-size: 28px;
+      line-height: 32px;
+    }
+  }
+  input {
+    @include make-md-column(4);
+    float: none!important;
+    display: inline;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #fff;
+    opacity: .2;
+    border: 1px solid #fff;
+    margin-right: 10px;
+  }
+  button {
+    float: none!important;
+    display: inline;
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: none;
+  }
+  button:hover {
+    opacity: .8;
+  }
+}

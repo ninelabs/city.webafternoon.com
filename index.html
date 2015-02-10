@@ -2,71 +2,25 @@
 layout: default
 title: Web Afternoon
 ---
-
-
 <div class="container">
   <div class="block1">
-    <h1>March 27, 2015 | Atlanta, GA</h1>
-    <p>This is not your ordinary web conference. It's designed with value in mind, from the setup to the delivery of content. Local thought leaders talk with you, not at you. Pick their brains as they share short talks full of high-quality, meaningful information. Interact with fellow attendees and make a new friend you're excited to meet again and again. No fluff, no ego--just great Q&amp;A and the chance to network with people like you who get it.</p>
-  </div> <!-- END BLOCK 1 -->
-</div> <!-- END CONTAINER -->
-
-
-<section>
-  <div class="keynotes">
-    <h1>Keynotes</h1>
-    {% for speaker in site.data.keynotes %}
-    {% include speaker-module.html %}
-    {% endfor %}
-  </div>
-</section>
-
-
-<div class="container">
-  <div class="mobile-gold">
-    <div class="gold-sponsors">
-      <h1>Gold Sponsors</h1>
-      {% for silver in site.data.sponsors %}
-      <li>{{ sponsor.name }}</li>
-      {% endfor %}
-    </div>
+    <h2>Not Your Ordinary Web Conference</h2>
+    <p>It's designed with value in mind, from the setup to the delivery of content. Local thought leaders talk with you, not at you. Pick their brains as they share short talks full of high-quality, meaningful information. Interact with fellow attendees and make a new friend you're excited to meet again and again. No fluff, no ego--just great Q&amp;A and the chance to network with people like you who get it.</p>
   </div>
 </div>
 
-
-<section>
-  <div class="speakers">
-  <h1>Thought Leaders</h1>
-    {% for speaker in site.data.speakers %}
-    {% include speaker-module.html %}
-    {% endfor %}
-
-  </div> <!-- END SPEAKERS -->
-</section>
+{% include _keynotes.html %}
 
 
-<section id="info">
-  <div class="container">
-    what to expect
-  </div>
-</section>
-
-<div class="container">
-  <div class="silver-sponsors">
-    <h1>Silver Sponsors</h1>
-    {% for silver in site.data.sponsors %}
-    <li>{{ sponsor.name }}</li>
-    {% endfor %}
-  </div> <!-- END SILVER SPONSORS -->
-</div>
+{% include _sponsor-gold.html %}
 
 
-<section id="subscribe">
-  <div class="container">
-    <div class="subscribe">
-      <h1>Get Notified When We Have Updates</h1>
-      <input type="text">
-      <button>Subscribe</button>
-    </div> <!-- END SUBSCRIBE -->
-  </div>
-</section>
+{% include _speakers.html %}
+
+{% include _info.html %}
+
+{% comment %}
+{% include _sponsor-silver.html %}
+{% endcomment %}
+
+{% include _subscribe.html %}

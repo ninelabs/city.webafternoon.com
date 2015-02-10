@@ -1,0 +1,67 @@
+// ----- gold sponsors -------
+.gold-sponsors {
+  @include breakpoint(nano) {
+    width: 100%;
+  }
+  @include breakpoint(xs) {
+    width: 100%;
+  }
+  @include make-md-column(12);
+  padding: 50px 0px;
+  h1 {
+    padding-bottom: 5px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2d2d2d;
+  }
+  img {
+    @include make-md-column(4);
+    padding: 10px 85px;
+    position: center;
+    @include breakpoint(nano) {
+      width: 50%;
+      float: left;
+      padding: 10px;
+    }
+    @include breakpoint(xs) {
+      width: 50%;
+      float: left;
+      padding: 10px;
+    }
+  }
+}
+
+
+// ----- silver sponsors -------
+.silver-sponsors {
+  @include breakpoint(nano) {
+    width: 100%;
+    padding: 10px 0px;
+  }
+  @include breakpoint(xs) {
+    width: 100%;
+    padding: 10px 0px;
+  }
+  @include make-md-column(12);
+  padding: 50px 0px;
+  h1 {
+    padding-bottom: 20px;
+    text-align: center;
+    color: #2d2d2d;
+  }
+  img {
+    @include make-md-column(2);
+    padding: 15px 20px;
+    position: center;
+    @include breakpoint(nano) {
+      width: 50%;
+      float: left;
+      padding: 10px;
+    }
+    @include breakpoint(xs) {
+      width: 50%;
+      float: left;
+      padding: 10px;
+    }
+  }
+}

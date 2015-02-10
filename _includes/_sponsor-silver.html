@@ -1,0 +1,8 @@
+<div class="container">
+  <div class="silver-sponsors">
+    <h1>With Support From</h1>
+    {% for sponsor in site.data.sponsors.silver %}
+    <a href="{{ sponsor.url }}">{{ sponsor.name }}</a>
+    {% endfor %}
+  </div>
+</div>

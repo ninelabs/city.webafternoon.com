@@ -1,0 +1,37 @@
+////////////////////////////////////////////////////////////////////
+// Footer
+////////////////////////////////////////////////////////////////////
+
+footer {
+  background-color: #fff;
+  padding:2em;
+  text-align: center;
+  a {
+    color:#2d2d2d;
+    &:hover{
+      color:#ccc;
+    }
+  }
+  nav {
+    padding:1em 0;
+    @include breakpoint(sm) {
+      a {
+        display: block;
+        font-size: .8em;
+        margin-bottom:.65em;
+      }
+      span { display: none; }
+    }
+  }
+  .credits, .copyright {
+    font-size: .85em;
+    p {
+      font-size: 14px;
+      margin-top: 1em;
+    }
+    @include breakpoint(sm) {
+      font-size: .8em;
+    }
+  }
+}
+

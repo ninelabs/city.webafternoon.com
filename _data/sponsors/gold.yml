@@ -1,0 +1,6 @@
+- name: MailChimp
+  url: http://www.mailchimp.com
+  image: mailchimp.png
+- name: Nine Labs
+  url: http://www.ninelabs.com
+  image: ninelabs.png

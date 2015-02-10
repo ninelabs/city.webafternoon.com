@@ -1,6 +1,6 @@
 - name: MailChimp
-  url: www.mailchimp.com
+  url: http://www.mailchimp.com
   image: mailchimp.png
 - name: Adobe
-  url: www.adobe.com
+  url: http://www.adobe.com
   image: adobe.png

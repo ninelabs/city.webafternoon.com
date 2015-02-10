@@ -1,0 +1,8 @@
+<section>
+  <div class="keynotes">
+    <h1>Featuring</h1>
+    {% for speaker in site.data.keynotes %}
+    {% include _speaker-module.html %}
+    {% endfor %}
+  </div>
+</section>

@@ -1,13 +1,11 @@
 ////////////////////////////////////////////////////////////////////
 // WEB AFTERNOON -=- styles.scss
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600|Roboto+Slab);
 @import 'variables','../bower_components/bootstrap-sass/vendor/assets/stylesheets/bootstrap.scss','responsive','mixins';
 
 html,body {
   height: 100%;
 }
-
 
 //////////////////////////
 // Typography
@@ -23,14 +21,17 @@ a {
 h1, h2, h3 {
   color: #2d2d2d;
   font-family: $font-family-sans-serif;
+  font-weight: bold;
 }
 h4 {
   color: $gray;
   font-weight: bolder;
 }
- p {
-  font-family: $font-family-serif; 
- }
+p {
+  font-family: $font-family-serif;
+  font-size: 24px;
+  line-height: 1.45em;
+}
 
 //////////////////////////
 // Structure
@@ -44,7 +45,7 @@ body {
 }
 
 #content {
-  // @include make-sm-column(12);
+  //@include make-sm-column(12);
   background-color: #fff;
   padding-bottom: 4em;
   padding-top: 2em;
@@ -61,7 +62,6 @@ body {
 header {
   @extend .container;
   color: #fff;
-
   .cta a {
     @extend .btn;
     @extend .btn-primary;
@@ -163,7 +163,7 @@ header {
 }
 
 //////////////////////////////////////////////////////////
-////  ATL EVENT PAGE -- Default.html  
+////  ATL EVENT PAGE -- Default.html
 //////////////////////////////////////////////////////////
 
 #content {
@@ -172,7 +172,7 @@ header {
 }
 
 section {
-  @include make-row ();
+  @include make-row();
   padding: 0px;
   margin: 0 auto;
 }
@@ -192,268 +192,7 @@ section {
     color: #2d2d2d;
     line-height: 26px;
   }
-} // end block 1
-
-// ----- keynotes -------
-.keynotes {
-  h1 {
-    font-size: 65px;
-    padding-left: 10px;
-    color: #d84315;
-  }
-  h3 {
-    color: #d84315;
-    font-size: 75px;
-    text-align: center;
-  }  
-  .test {
-    position: relative;
-    width: 100%;
-    float: left;
-    @include breakpoint(md) {
-      width: 33.3%;
-      float: left;
-    }
-    @include breakpoint(lg) {
-      width: 33.3%;
-      float: left;
-    }
-    img {
-      margin: 0 auto;
-      padding: 0px;
-      width: 100%;
-    }
-    .name {
-      position: absolute;
-      background-color: rgba(250, 250, 250, 1);
-      bottom: -40px;
-      padding: 20px 10px;
-      background-color: rgba(250, 250, 250, 1);
-      border-bottom: 10px solid #d84315;
-      @include breakpoint(md) {
-        .name {
-          padding: 10px 20px 10px 20px;
-        }
-        h1 {
-          font-size: 22px;
-        }
-      }
-      @include breakpoint(lg) {
-        .name {
-          padding: 10px 20px 10px 20px;
-        }
-        h1 {
-          font-size: 22px;
-        }
-      }
-      h1 {
-        color: #d84315;
-        font-size: 22px;
-        padding: 0px;
-      }
-      h2 {
-        color: #2d2d2d;
-        font-size: 18px;
-        padding: 0px;
-        margin: 0 auto; 
-      }
-    } // end name
-  } // end test 
-} // end keynotes
-
-// ----- gold sponsors -------
-.gold-sponsors {
-   @include breakpoint(nano) {
-        width: 100%;
-      }
-    @include breakpoint(xs) {
-        width: 100%;
-      }
-  @include make-md-column(12);
-  padding: 50px 0px;
-    h1 {
-      padding-bottom: 5px;
-      text-align: center;
-      margin-bottom: 25px;
-      color: #2d2d2d;
-    }
-    img {
-      @include make-md-column(4);
-      padding: 10px 85px;
-      position: center;
-      @include breakpoint(nano) {
-        width: 50%;
-        float: left;
-        padding: 10px;
-      }
-      @include breakpoint(xs) {
-        width: 50%;
-        float: left;
-        padding: 10px;
-      }
-    }
-} // end gold sponsors
-
-.speakers {
-  h1 {
-    font-size: 65px;
-    padding-left: 10px;
-    color: #d84315;
-  }
-  h3 {
-      color: #d84315;
-      font-size: 75px;
-      text-align: center;
-    }
-  .test {
-    background-color: #fff;
-    position: relative;
-    width: 100%;
-    float: left;
-    @include breakpoint(md) {  
-      @include make-md-column(3);
-      margin: 0 auto;
-      padding: 0px 0px 60px 0px;
-    }
-    @include breakpoint(lg) {  
-      @include make-md-column(3);
-      margin: 0 auto;
-      padding: 0px 0px 60px 0px;
-    }
-    img {
-      width: 100%;
-      float: left;
-    }
-    .name {
-      position: absolute;
-      background-color: rgba(250, 250, 250, 1);
-      bottom: 0;
-      padding: 20px 10px;
-      border-bottom: 10px solid #d84315;
-      h1 {
-        color: #d84315;
-        font-size: 22px;
-        padding: 5px 0px;
-        margin: 0 auto;
-      }
-      h2 {
-        color: #2d2d2d;
-        font-size: 16px;
-        padding: 0px;
-        line-height: 22px;
-        margin: 0 auto; 
-      }
-    }  
-  }
-} // end speakers
-
-// ----- info -------
-section #info {
-  background: url(/img/info-bkgd.jpg) no-repeat center bottom;
-  background-size: cover;
 }
-
-.info {
-  @include make-md-column(12);
-  padding: 50px 0px;
-  h1 {
-    padding-bottom: 15px;
-    color: #fff;
-    text-align: center;
-  }
-  p .left { 
-    @include make-md-column(6);
-    color: #fff;
-    line-height: 28px;
-    padding: 10px 20px 30px 10px;
-  }
-  p {
-    @include make-md-column(6);
-    color: #fff;
-    line-height: 28px;
-    padding: 10px 20px 30px 10px;
-  }
-} // end info 
-
-// ----- silver sponsors -------
-.silver-sponsors {
-  @include breakpoint(nano) {
-    width: 100%;
-    padding: 10px 0px;
-  }
-  @include breakpoint(xs) {
-    width: 100%;
-    padding: 10px 0px;
-  }
-  @include make-md-column(12);
-  padding: 50px 0px;
-  h1 {
-    padding-bottom: 20px;
-    text-align: center;
-    color: #2d2d2d;
-  }
-  img {
-    @include make-md-column(2);
-    padding: 15px 20px;
-    position: center;
-    @include breakpoint(nano) {
-      width: 50%;
-      float: left;
-      padding: 10px;
-    }
-    @include breakpoint(xs) {
-      width: 50%;
-      float: left;
-      padding: 10px;
-    }
-  }
-} // end silver sponsors
-
-// ----- subscribe -------
-section #subscribe {
-  background: url(/img/subscribe-bkgd.jpg) no-repeat center bottom;
-  background-size: cover;
-}
-.subscribe {
-  @include make-md-column(12);
-  padding: 50px 0px;
-  text-align: center;
-  h1 {
-    color: #fff;
-    padding-bottom: 20px;
-    @include breakpoint(nano) {
-      font-size: 28px;
-      line-height: 32px;
-    }
-    @include breakpoint(xs) {
-      font-size: 28px;
-      line-height: 32px;
-    }
-  }
-  input {
-    @include make-md-column(4);
-    float: none!important;
-    display: inline;
-    padding: 15px;
-    border-radius: 5px;
-    background-color: #fff;
-    opacity: .2;
-    border: 1px solid #fff;
-    margin-right: 10px;
-  }
-  button {
-    float: none!important;
-    display: inline;
-    background-color: #fff;
-    padding: 15px 20px;
-    border-radius: 5px;
-    border: none;
-  }
-  button:hover {
-    opacity: .8;
-  }
-} // end subscribe 
-
 
 //////////////////////////
 // Globals
@@ -490,145 +229,14 @@ section #subscribe {
   }
 }
 
-//////////////////////////
-// Event
-//////////////////////////
-
-#event-overview {
-  padding:0;
-  .highlight {
-    @include make-sm-column(12);
-  }
-  .info p {
-    margin-bottom:1.35em;
-  }
-}
-
-.speaker-list {
-  @include make-sm-column(8);
-}
-.sponsor-list {
-  @include make-sm-column(4);
-}
-
-#event-supplemental {
-  @include make-row();
-  border-top: 2px solid #ddd;
-  margin-bottom: 2em;
-  padding-top: 2em;
-
-  .map img {
-    @extend .img-responsive;
-  }
-}
-
-#event-details, #sponsor-page, #host-page {
-  @include make-row();
-  .main-content {
-    @include make-sm-column(8);
-  }
-  .sidebar {
-    @include make-sm-column(4);
-  }
-}
-
-//////////////////////////
-// SPONSORS
-//////////////////////////
-
-.sponsor-list {
-  .sponsor {
-    text-align: center;
-  }
-}
-
-
-//////////////////////////
-// PARTNERS
-//////////////////////////
-
-// .main-content {
-//   @include make-md-column(12);
-//   margin-bottom: 30px;
-// }
-
-// .secondary-content {
-//   @include make-md-column(8);
-// }
-
-// .graphic1 img {
-//   width: 90%;
-//   margin-bottom: 20px;
-// }
-
-// .sidebar {
-//     @include make-md-column(4);
-//     background-color: #bbdefb;
-//     height: 400px;
-//   }
-
-
-
-
-//////////////////////////
-// TICKETS
-//////////////////////////
-
-#tickets {
-  @include make-row();
-  border-top: 2px solid #ddd;
-  padding-top:2em;
-  .ticket-form {
-    @include make-sm-column(12);
-    margin: 2em 0 3em;
-    iframe {
-      @include breakpoint(xs) { display: none; }
-    }
-    .btn {
-      display: none;
-      @include breakpoint(xs) {
-        display: block;
-        margin:2em auto 5em;
-        text-align: center;
-      }
-    }
-  }
-}
-
-////////////////////////////////////////////////////////////////////
-// Footer
-////////////////////////////////////////////////////////////////////
-
-footer {
-  background-color: #fff;
-  padding:2em;
-  text-align: center;
-  a {
-    color:#2d2d2d;
-    &:hover{
-      color:#ccc;
-    }
-  }
-  nav {
-    padding:1em 0;
-    @include breakpoint(sm) {
-      a {
-        display: block;
-        font-size: .8em;
-        margin-bottom:.65em;
-      }
-      span { display: none; }
-    }
-  }
-  .credits, .copyright {
-    font-size: .85em;
-    p { margin-top: 1em; }
-    @include breakpoint(sm) {
-      font-size: .8em;
-    }
-  }
-}
-
+@import
+  "speakers",
+  "info",
+  "sponsors",
+  "subscribe",
+  "sponsors",
+  "tickets",
+  "footer";
 
 // END
 ////////////////////////////////////////////////////////////////////

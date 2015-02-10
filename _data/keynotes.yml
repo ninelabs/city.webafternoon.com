@@ -1,13 +1,16 @@
 - name: Martin Ringlein
-  title: Presidential Innovation Fellow
+  title: CEO
   company: nvite
+  company-url: https://nvite.com
   photo: /img/atlanta/martin_ringlein.jpg
   twitter: http://twitter.com/smarty
 - name: Greg Hoy
   title: CEO
   company: Happy Cog &amp; Bureau of Digital Affairs
+  company-url: http://www.happycog.com
   photo: /img/atlanta/greg_hoy.jpg
 - name: Doc Waller
   title: Inspiration Architect
   company: Becoming Possible
+  company-url: http://becomingpossible.com/
   photo: /img/atlanta/doc.jpg

@@ -1,49 +1,61 @@
 - name: Anna McDevitt
   title: Owner
   company: Laboratory Marketing
+  company-url: http://www.laboratory-marketing.com/
   photo: /img/atlanta/anna.jpg
 - name: Chidi Afulezi
-  title: Co-Founder, Head Product Guy
+  title: Co-Founder
   company: The Core
+  company-url: http://thecoreventures.com/
   photo: /img/atlanta/chidi.jpg
 - name: Fabio Carneiro
-  title: Lead Email Developer and UX Designer 
+  title: Lead Email Developer
   company: MailChimp
+  company-url: http://www.mailchimp.com
   photo: http://awdg.s3.amazonaws.com/event-assets/fabio.png
   twitter: https://twitter.com/flcarneiro
 - name: Vicky Jones
   title: President
   company: Brand Fever
+  company-url: http://brandfever.com
   photo: /img/atlanta/vicky.jpg
 - name: Sophia Voychehovski
   title: Founder
   company: ReWired UX Studio
+  company-url: http://www.rewiredux.com/
   photo: /img/atlanta/sophia.jpg
 - name: Rosario Robinson
   title: Program Manager
-  company: Anita Borg Institute for Women and Technology
+  company: Anita Borg Institute
+  company-url: http://anitaborg.org/
   photo: /img/atlanta/rose.jpg
 - name: Alankar Tayal
   title: Usability Strategist
   company: Sage Software
+  company-url: http://www.sage.com
   photo: /img/atlanta/alankar.jpg
 - name: Melanie Crissey
   title: Client Success Manager
   company: Rigor
+  company-url: http://www.rigor.com
   photo: /img/atlanta/melanie.jpg
 - name: John Saddington
-  title: Partner, Hacker
-  company: The Iron Yard, Desk App
+  title: Hacker
+  company: Desk App
+  company-url: http://desk.pm
   photo: /img/atlanta/john.jpg
 - name: Jennifer Fix
   title: VP of Marketing &amp; Client Services
   company: 352 Inc.
+  company-url: http://352inc.com
   photo: /img/atlanta/jen.jpg
 - name: Erica Stanley
   title: Founder
   company: Acire Studios
+  company-url: http://portfolio.acirestudios.com/
   photo: /img/atlanta/erica.jpg
 - name: M.Cole Jones
   title: Co-Founder
   company: covello
+  company-url: http://covello.co
   photo: /img/atlanta/m_cole.jpg
