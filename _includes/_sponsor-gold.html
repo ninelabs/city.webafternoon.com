@@ -3,7 +3,7 @@
     <div class="gold-sponsors">
       <h1>Brought To You By</h1>
       {% for sponsor in site.data.sponsors.gold %}
-      <a href="{{ sponsor.url }}">{{ sponsor.name }}</a>
+      <a href="{{ sponsor.url }}" title="{{ sponsor.name }}"><img src="/img/sponsors/{{ sponsor.image }}" alt="{{ sponsor.name }}"></a>
       {% endfor %}
     </div>
   </div>

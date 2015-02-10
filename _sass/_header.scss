@@ -1,0 +1,81 @@
+//////////////////////////
+// Header
+//////////////////////////
+
+header {
+  @extend .container;
+  color: #fff;
+  .cta a {
+    @extend .btn;
+    @extend .btn-primary;
+  }
+
+  .hero {
+     @include make-row();
+    h1 {
+      color: #fff;
+      font-size: 3em;
+      text-shadow: 0 2px 0 #020202;
+      padding-bottom: 15px;
+      @include breakpoint(md) { font-size:1.8em; }
+      @include breakpoint(sm) { font-size: 1.5em; }
+    }
+    h2 {
+      color: darken(#fff, 20%);
+      font-size: 28px;
+      margin: 0 0 1em;
+      text-shadow: 0 1px 0 #020202;
+      @include breakpoint(md) {
+        font-size:1em;
+        margin-bottom:2em;
+      }
+      @include breakpoint(sm) {
+        font-size: .8em;
+      }
+    }
+  }
+
+  &.full {
+    background: url(/img/bg-header.jpg) no-repeat center bottom;
+    margin: 0 auto;
+    padding:3em 0 0;
+    text-align: center;
+    .hero {
+      margin:0 auto 2em;
+    }
+    .brand, .message, .cta {
+      @include make-sm-column(12)
+    }
+    .brand {
+      margin-bottom: 3em;
+    }
+    .cta {
+      padding-top:20px;
+      a {
+        @extend .btn-lg;
+      }
+    }
+  }
+  &.thin {
+    margin-bottom:1em;
+    margin-top:0;
+    padding:1em 0 0;
+    text-align: left;
+    .brand {
+      @include make-sm-column(1);
+      img {
+        @extend .img-responsive;
+      }
+    }
+    .message {
+      @include make-sm-column(9);
+      h1 { font-size: 20px; margin: .3em 0; }
+      h2 { font-size: 1em; margin: 0; }
+    }
+    .cta {
+      @include make-sm-column(2);
+      padding-top: 14px;
+      text-align: right;
+    }
+  }
+}

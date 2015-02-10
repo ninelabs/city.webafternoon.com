@@ -1,6 +1,39 @@
 ////////////////
 // SPEAKER BLOCKS
-.test {
+.speakers {
+  background-color: darken($brand-primary,.4);
+  h1 {
+    color:#fff;
+    font-size: 4em;
+    padding-left: 10px;
+  }
+  h3 {
+    color: #d84315;
+    font-size: 75px;
+    text-align: center;
+  }
+}
+
+// ----- keynotes -------
+.keynotes {
+  .speaker {
+    @include breakpoint(sm) {
+      width: 33.3333333%;
+      float: left;
+    }
+    @include breakpoint(md) {
+      width: 33.3333333%;
+      float: left;
+    }
+    @include breakpoint(lg) {
+      width: 33.3333333%;
+      float: left;
+    }
+  }
+}
+
+
+.speaker {
   background-color: lighten($brand-primary,20%);
   position: relative;
   width: 100%;
@@ -28,7 +61,7 @@
     position: absolute;
     background-color: rgba(250, 250, 250, 1);
     bottom: 0;
-    padding: 20px 10px;
+    padding: 5px 10px 10px;
     border-bottom: 10px solid #d84315;
     h1 {
       color: #d84315;
@@ -52,43 +85,3 @@
   }
 }
 
-// ----- keynotes -------
-.keynotes {
-  h1 {
-    font-size: 65px;
-    padding-left: 10px;
-    color: #d84315;
-  }
-  h3 {
-    color: #d84315;
-    font-size: 75px;
-    text-align: center;
-  }
-  .test {
-    @include breakpoint(sm) {
-      width: 33.3%;
-      float: left;
-    }
-    @include breakpoint(md) {
-      width: 33.3%;
-      float: left;
-    }
-    @include breakpoint(lg) {
-      width: 33.3%;
-      float: left;
-    }
-  }
-}
-
-.speakers {
-  h1 {
-    font-size: 65px;
-    padding-left: 10px;
-    color: #d84315;
-  }
-  h3 {
-    color: #d84315;
-    font-size: 75px;
-    text-align: center;
-  }
-}

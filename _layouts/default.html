@@ -2,15 +2,7 @@
 
 <body class="atlanta">
 
-  <header id="home" class="full">
-    <div class="hero">
-      <div class="brand">
-        <a href="/"><img src="/img/logo.png" alt="Web Afternoon"></a>
-      </div>
-      <h1>The Event for People Who Love the Web</h1>
-      <h2>March 27, 2015 | Atlanta, GA</h2>
-    </div>
-  </header>
+  {% include _header.html %}
 
   <section id="content">
     {{ content }}
@@ -18,4 +10,8 @@
 
   {% include _foot.html %}
 
+  <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
 </body>
+</html>

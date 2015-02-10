@@ -12,12 +12,6 @@ section #info {
     color: #fff;
     text-align: center;
   }
-  p .left {
-    @include make-md-column(6);
-    color: #fff;
-    line-height: 28px;
-    padding: 10px 20px 30px 10px;
-  }
   p {
     @include make-md-column(6);
     color: #fff;

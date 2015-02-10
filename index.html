@@ -2,25 +2,10 @@
 layout: default
 title: Web Afternoon
 ---
-<div class="container">
-  <div class="block1">
-    <h2>Not Your Ordinary Web Conference</h2>
-    <p>It's designed with value in mind, from the setup to the delivery of content. Local thought leaders talk with you, not at you. Pick their brains as they share short talks full of high-quality, meaningful information. Interact with fellow attendees and make a new friend you're excited to meet again and again. No fluff, no ego--just great Q&amp;A and the chance to network with people like you who get it.</p>
-  </div>
-</div>
-
+{% include _intro.html %}
 {% include _keynotes.html %}
-
-{% comment %}
 {% include _sponsor-gold.html %}
-{% endcomment %}
-
 {% include _speakers.html %}
-
 {% include _info.html %}
-
-{% comment %}
-{% include _sponsor-silver.html %}
-{% endcomment %}
-
+{% comment %}{% include _sponsor-silver.html %}{% endcomment %}
 {% include _subscribe.html %}
