@@ -38,14 +38,14 @@ p {
 //////////////////////////
 
 body {
-  background: url(/img/bg-wrap.jpg) no-repeat center top;
+  background: url(/img/bg-wrap.jpg) center top;
+  color: $gray-darker;
   bacground-size: cover;
   padding:0;
   margin:0;
 }
 
 #content {
-  //@include make-sm-column(12);
   background-color: #fff;
   padding-bottom: 4em;
   padding-top: 2em;
@@ -68,6 +68,7 @@ header {
   }
 
   .hero {
+     @include make-row();
     h1 {
       color: #fff;
       font-size: 28px;
@@ -90,7 +91,7 @@ header {
   }
 
   &.full {
-    background: url(/img/hero.jpg) no-repeat center bottom;
+    background: url(/img/bg-header.jpg) no-repeat center bottom;
     margin: 0 auto;
     padding:3em 0 0;
     text-align: center;
